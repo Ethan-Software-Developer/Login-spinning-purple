@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1f293a;
+  background: url(/cool-4k-ultra-hd-3840-x-2160-yw5jiqf2ul28e7tg.jpg);
+}
+
+.container {
+  position: relative;
+  width: 256px;
+  height: 256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container span {
+  position: absolute;
+  left: 0;
+  width: 32px;
+  height: 6px;
+  background: #2c4766;
+  border-radius: 8px;
+  transform-origin: 128px;
+  transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+  animation: animateBlink 3s linear infinite;
+  animation-delay: calc(var(--i) * (3s / 50));
+}
+
+@keyframes animateBlink {
+  0% {
+    background: blue;
+  }
+  25% {
+    background: red;
+  }
+}
+
+.login-box {
+  position: absolute;
+  width: 400px;
+  background: transparent;
+}
+
+.login-box form {
+  width: 100%;
+  padding: 0px 50px;
+}
+
+h2 {
+  font-size: 2em;
+  color: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.input-box {
+  position: relative;
+  margin: 25px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #2c4766;
+  outline: none;
+  border-radius: 40px;
+  transition: 0.5s ease;
+  font-size: 1em;
+  color: #fff;
+  padding: 0px 20px;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-color: #0c08e7;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: 1px;
+  font-size: 0.8em;
+  background: transparent;
+  padding: 0px 6px;
+  color: #fff;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+
+  left: 20px;
+  transform: translateY(-50%);
+  color: transparent;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+
+.forgot-pass {
+  margin: -15px 0px 10px;
+  text-align: center;
+}
+
+.forgot-pass a {
+  font-size: 0.85em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.forgot-pass a:hover {
+  text-decoration: underline;
+}
+
+button {
+  color: white;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  color: white;
+  background: #0c08e7;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #1f293a;
+  font-weight: 600;
+}
+
+.signup-link {
+  margin: 20px 0px 10px;
+  text-align: center;
+  color: white;
+}
+
+.signup-link a {
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
