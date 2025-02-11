@@ -14,8 +14,11 @@ body {
   align-items: center;
   min-height: 100vh;
   background: #1f293a;
-  background: url(/cool-4k-ultra-hd-3840-x-2160-yw5jiqf2ul28e7tg.jpg);
+  background: url(/cool-4k-ultra-hd-3840-x-2160-yw5jiqf2ul28e7tg.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100vw;
 }
+
 
 .container {
   position: relative;
